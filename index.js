@@ -32,7 +32,7 @@ async function updateUserAndSendEmail(username, verificationUrl) {
 
     const msgData = {
       from: "Verify your account <mailgun@cloudnativewebapp.me>",
-      to: "ubalasubramanian03@gmail.com",
+      to: username,
       subject: "Verification Link",
       text: `Please verify your email by clicking on the link: ${verificationUrl}. This link will expire in 2 minutes.`,
     };
